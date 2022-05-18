@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dip"
+    android:stretchColumns="1"
+    tools:context=".ActualizarArticuloActivity">
+    <TableRow>
+        <TextView android:text="idarticulo" />
+        <EditText
+            android:id="@+id/idarticuloActualizar"
+            android:inputType="textCapCharacters"
+            android:maxLength="7" />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="nombre articulo" />
+        <EditText
+            android:id="@+id/nomarticulo"
+            android:inputType="textCapCharacters"
+            android:maxLength="6" />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="tipo Articulo" />
+        <EditText
+            android:id="@+id/tipoArticulo"
+            android:inputType="textCapCharacters"
+            android:maxLength="5" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:onClick="actualizarArticulo"
+            android:text="Actualizar articulo" />
+    </TableRow>
+
+</TableLayout>
